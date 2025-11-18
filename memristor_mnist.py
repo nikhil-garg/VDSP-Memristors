@@ -85,8 +85,8 @@ def clip(val, min, max):
 def vdsp_memristor(
     w,
     vmem,
-    lr=0.01,  # Learning rate
-    lr_pn=1,  # Learning rate asymettry
+    lr=1,  # Learning rate (Fixed to 1)
+    lr_pn=1,  # Learning rate asymettry  (Fixed to 1)
     gamma=1,  # Non-linearity
     gamma_pn=1,
     alpha=1,  # Exponential response
@@ -103,11 +103,8 @@ def vdsp_memristor(
     vth_n = vth * vth_pn
     gamma_p = gamma
     gamma_n = gamma * gamma_pn
-    # gamma_n = (w>0.1)*gamma_n + (w<=0.1)*gamma_p
-    # gamma_p = (w<0.9)*gamma_p
 
     f_p = np.power(1-w,gamma_p)
-    # f_n = ((w>0.1) * np.power(w,gamma_n)) + ((w<=0.1) * np.power(0.1,gamma_n))
     f_n = np.power(w,gamma_n)
     f_n = (w>0.01)*f_n + (w<=0.01)
     cond_p = vmem < -vth_p
