@@ -7,7 +7,7 @@ This is the code for the paper *Unsupervised local learning based on voltage-dep
 The code was written in Python 3.9.
 
 ### Dependencies
--numpy
+- numpy
 - tqdm
 - matplotlib
 - fire
