@@ -32,7 +32,7 @@ python3 memristor_mnist.py
 Simplified implementation without memristive models : 
 ```
 python3 vdsp_mnist_wta_simplified.py
-
+```
 Parametric runs : 
 ```
 python3 memristor_mnist.py run_random_vdsp {seed}
