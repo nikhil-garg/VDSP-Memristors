@@ -1,4 +1,4 @@
-# VDSP 
+# VDSP for resistive and ferroelectric synapses
 
 This is the code for the paper *Unsupervised local learning based on voltage-dependent synaptic plasticity for resistive and ferroelectric synapses*, available [here](https://arxiv.org/abs/2510.25787).
 
