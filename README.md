@@ -35,5 +35,5 @@ python3 vdsp_mnist_wta_simplified.py
 ```
 Parametric runs : 
 ```
-python3 memristor_mnist.py run_random_vdsp {seed}
+python3 memristor_mnist_param_exp.py run_random_vdsp {seed}
 ```
